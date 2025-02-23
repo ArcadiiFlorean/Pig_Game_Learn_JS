@@ -14,13 +14,12 @@ const btnHold = document.querySelector('.btn--hold');
 
 // Starting condition
 // Solicită numele jucătorilor
-const playerName0 = prompt("Enter the first player's name:", "Player 1");
-const playerName1 = prompt("Enter the second player's name:", "Player 2");
+//const playerName0 = prompt("Enter the first player's name:", 'Player 1');
+//const playerName1 = prompt("Enter the second player's name:", 'Player 2');
 
 // Actualizează interfața cu numele introduse
-document.getElementById('name--0').textContent = playerName0;
-document.getElementById('name--1').textContent = playerName1;
-
+//document.getElementById('name--0').textContent = playerName0;
+//GameG unitdocument.getElementById('name--1').textContent = playerName1;
 score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
@@ -80,4 +79,11 @@ btnHold.addEventListener('click', function () {
     // Switch to the next player
     switchPlayer();
   }
+});
+
+//new Game
+btnNew.addEventListener(`click`, function () {
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  diceEl.classList.add('hidden');
 });
